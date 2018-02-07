@@ -43,7 +43,7 @@ namespace Car.Controllers
            return View();
         }
 
-        [HttpPost("/Cars")]
+        [HttpPost("/Results")]
         public ActionResult Create()
         {
           // Cars newCars = new Cars (Request.Form["new-car"], "sedan", 9999, 9999);
