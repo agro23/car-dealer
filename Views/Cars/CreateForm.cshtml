@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <meta charset="utf-8">
+  <title>Used Car Lot</title>
+  </head>
+  <body>
+    <div class ="container well">
+      <h1>Car List</h1>
+
+      <!-- <form action="/Cars" method="post"> -->
+      <!-- <form>
+
+        <label for="new-car">Enter a Used Car</label>
+        <input id="new-car" name="new-car" type="text">
+        <button type="submit">Submit</button>
+      </form> -->
+
+    </div>
+    <div class = "container well">
+      <form action="/Cars" method="post">
+        <div class = "row" id="favorites">
+          <h2> Please enter some of your favorite things: </h2>
+        </div>
+          <div class="row">
+            <div class="form-group col-md-2">
+              <label for="Make">Make</label>
+              <input type="text" class="form-control" id="make">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="Model">Model</label>
+              <input type="text" class="form-control" id="model">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="Price">Price Cap</label>
+              <input type="text" class="form-control" id="price">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="Miles">Max Mileage</label>
+              <input type="text" class="form-control" id="miles">
+            </div>
+            <!-- <div class="form-group col-md-2">
+              <label for="song">Favorite Song</label>
+              <input type="text" class="form-control" id="song" placeholder="Hey, Jude">
+            </div> -->
+          </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

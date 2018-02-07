@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <meta charset="utf-8">
+  <title>Used Car Lot</title>
+  </head>
+  <body>
+    <div class="container well">
+      <h1>Godzillas Used Auto</h1>
+      <ul>
+        @foreach(var car in Model)
+        {
+          <li>@car.GetMake()</li>
+        }
+      </ul>
+      <p><a href="/Cars/new">Add another item</a></p>
+
+      <!-- <form action="/Items" method="post">
+        <label for="new-item">Item description:</label>
+        <input id="new-item" name="new-item" type="text">
+        <button type="submit">Submit</button>
+      </form> -->
+
+      <form action="/Cars/delete" method="post">
+        <button type="submit" name="button">Clear All Items</button>
+      </form>
+    </div>
+  </body>
+</html>
